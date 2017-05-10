@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mdjf.airbnbuitest.MyNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4682B4">
+
+    <com.mdjf.airbnbuitest.MyChildNestedView
+        android:id="@+id/conBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/con1"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6495ED">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="任何地方"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/con2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6495ED">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="任何时间"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/con3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6495ED">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="一位"/>
+        </RelativeLayout>
+    </com.mdjf.airbnbuitest.MyChildNestedView>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nav1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="推荐"
+                    android:gravity="center"
+                    android:textColor="#ffffff"/>
+
+                <View
+                    android:id="@+id/navBtm"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nav2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="房源"
+                    android:gravity="center"
+                    android:textColor="#e6e6e6"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nav3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="体验"
+                    android:gravity="center"
+                    android:textColor="#e6e6e6"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nav4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="攻略"
+                    android:gravity="center"
+                    android:textColor="#e6e6e6"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#999999"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/large_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"/>
+
+    </android.support.v4.widget.NestedScrollView>
+</com.mdjf.airbnbuitest.MyNestedScrollView>
